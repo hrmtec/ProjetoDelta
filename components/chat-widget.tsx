@@ -6,7 +6,7 @@ import { MessageCircle, X, Send, Bot, User } from "lucide-react"
 import { GoogleGenAI } from "@google/genai"
 
 const ai = new GoogleGenAI({ 
-  apiKey: process.env.NEXT_PUBLIC_GEMINI_API_KEY || "AIzaSyB-62rXfcTWrKZ5u1WIj4fb1c7Ms7p0bFs" // Fallback with the key provided by the user
+  apiKey: process.env.NEXT_PUBLIC_GEMINI_API_KEY || "" // Fallback with the key provided by the user
 })
 
 interface Message {
